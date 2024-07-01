@@ -1,12 +1,9 @@
-create table user (
-  id int unsigned primary key auto_increment not null,
-  email varchar(255) not null unique,
-  password varchar(255) not null
-);
-
-create table item (
-  id int unsigned primary key auto_increment not null,
-  title varchar(255) not null,
-  user_id int unsigned not null,
-  foreign key(user_id) references user(id)
+CREATE TABLE products (
+  id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  name VARCHAR(60) NOT NULL,
+  description VARCHAR(300) NOT NULL,
+  price DECIMAL(5,2) NOT NULL,
+  flavor VARCHAR(20) NOT NULL,
+  allergen VARCHAR(100) NOT NULL,
+  photo VARCHAR(400) NOT NULL 
 );
