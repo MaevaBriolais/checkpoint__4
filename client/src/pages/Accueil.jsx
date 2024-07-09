@@ -31,12 +31,12 @@ function Accueil() {
 
   return (
     <section className="sectionAccueil">
-      <header>
-        <h1>Tarte au citron, noisette</h1>
+      <header className="box-video">
         <video ref={videoRef} autoPlay loop>
           <source src={video} type="video/mp4" alt="tarte au citron noisette qui tourne"/>
           Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
+        <h1>TARTE AU CITRON NOISETTE</h1>
       </header>
       <main className="sectionChef">
         <h2>NOTRE CHEF PATISSIER</h2>
