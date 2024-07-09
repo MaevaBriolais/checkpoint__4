@@ -30,17 +30,18 @@ function Accueil() {
   }, []);
 
   return (
-    <>
+    <section className="sectionAccueil">
       <header>
         <h1>Tarte au citron, noisette</h1>
-        <video ref={videoRef} width="400" height="280" autoPlay loop>
-          <source src={video} type="video/mp4" />
+        <video ref={videoRef} autoPlay loop>
+          <source src={video} type="video/mp4" alt="tarte au citron noisette qui tourne"/>
           Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
       </header>
-      <main>
+      <main className="sectionChef">
         <h2>NOTRE CHEF PATISSIER</h2>
         <h3>Oscar MOLIN</h3>
+        <section>
         <img src={Avatar1} alt="avatar de patissier" />
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
@@ -48,8 +49,9 @@ function Accueil() {
           Eaque, adipisci minus earum ipsam reprehenderit dignissimos ipsum
           consequuntur rem at! Beatae!
         </p>
+        </section>
       </main>
-    </>
+    </section>
   );
 }
 

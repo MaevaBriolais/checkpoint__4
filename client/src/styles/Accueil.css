@@ -1,0 +1,40 @@
+.sectionAccueil{
+    
+
+    video{
+        width: 390px;
+    }
+
+    .sectionChef{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #C7D2A4;
+        margin-top: 5rem;
+
+
+        
+        section{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 70%;
+            margin: 2rem 0;
+
+           
+
+            img{
+                width: 180px;
+                height: 150px;
+                
+            }
+            p{
+                text-align: justify;
+                padding: 1.5rem;
+            }
+
+        }
+        
+
+    }
+}
