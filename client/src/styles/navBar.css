@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c7d2a4;
+  padding: 1rem;
+  color: black;
+  border-bottom: solid 1px black;
+  margin-bottom: 1rem;
+
+  .menu-burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+
+  p {
+    font-size: 20px;
+    border: solid 1px;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+
+  .login {
+    img {
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
