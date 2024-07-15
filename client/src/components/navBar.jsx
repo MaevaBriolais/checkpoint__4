@@ -1,6 +1,8 @@
 import "../styles/navBar.css";
-import avatar from "../assets/images/avatar.png";
+import { Link } from "react-router-dom";
 import { useState } from "react";
+
+import avatar from "../assets/images/avatar.png";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,14 +18,22 @@ function NavBar() {
         <span></span>
         <span></span>
       </span>
+      <Link to="/" className="LinkNav">
       <p> OSCAR </p>
+      </Link>
       <div className="login">
         <img src={avatar} alt="avatar login" />
       </div>
       <nav className={`menu ${isOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="">Pâtisserie</a>
+          <Link to="/patisseries">
+            Pâtisseries
+          </Link>
+          </li>
+          <li>
+            <Link to="/">
+            XXX</Link>
           </li>
         </ul>
       </nav>
