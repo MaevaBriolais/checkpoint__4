@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Accueil from "./pages/Accueil";
 import Patisseries from "./pages/Patisseries";
+import PatisserieIndiv from "./components/PatisserieIndiv";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
         path:"/patisseries",
         element: <Patisseries/>
       },
+      {
+        path:"/patisseries/:id",
+        element: <PatisserieIndiv/>
+      },
+      
     ],
   },
 ]);
