@@ -22,6 +22,14 @@ class ProductsSeeder extends AbstractSeeder {
         flavor: "Gourmand",
         allergen: "Lactose, Oeufs, Cacahuètes, Gluten",
         photo: "../public/assets/images/tarte_snickers.jpeg"
+      },
+      {
+        name: "Boule de chocolat",
+        description: "une sphère gourmande, alliant un cœur fondant de chocolat noir intense à une coque croquante. Sublimé par une fine couche de ganache, il ravira les palais des amateurs de cacao.",
+        price: 5.00,
+        flavor: "Chocolat",
+        allergen: "Lait, soja, gluten, œufs, et peut contenir des traces de fruits à coque et d'arachides",
+        photo: "../public/assets/images/BouleChocolat.jpeg"
       }
     ];
 
