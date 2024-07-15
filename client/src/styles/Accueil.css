@@ -1,12 +1,11 @@
 .sectionAccueil {
-
-  .box-video{
+  .box-video {
     video {
       width: 390px;
       display: block;
       border-bottom: 2px solid;
     }
-  
+
     h1 {
       position: absolute;
       width: 70%;
@@ -17,8 +16,6 @@
       color: white;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       text-align: center;
-
-  
     }
   }
 

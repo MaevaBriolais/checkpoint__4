@@ -1,0 +1,57 @@
+.patisseries {
+  padding: 2rem;
+
+  .patisserieFirst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    background-color: #f0f1eb;
+    p {
+      padding-top: 2rem;
+    }
+  }
+  
+  .patisserieSecond {
+    .patisserieIndiv {
+      display: flex;
+      justify-content: space-between;
+      height: 150px;
+      padding: 1rem;
+      margin: 1rem 0;
+      background-color: #f0f1eb;
+
+      &.left{
+        flex-direction: row;
+      }
+      &.right{
+        flex-direction: row-reverse;
+      }
+
+      img{
+        width: 80px;
+      }
+      p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       padding: 1rem;
+
+        .name {
+          display: block;
+        }
+        .price {
+          display: block;
+        }
+      }
+    }
+  }
+
+ 
+  
+
+
+}

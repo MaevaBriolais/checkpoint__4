@@ -5,5 +5,5 @@ CREATE TABLE products (
   price DECIMAL(5,2) NOT NULL,
   flavor VARCHAR(20) NOT NULL,
   allergen VARCHAR(100) NOT NULL,
-  photo VARCHAR(400) NOT NULL 
+  icon VARCHAR(400) NOT NULL 
 );

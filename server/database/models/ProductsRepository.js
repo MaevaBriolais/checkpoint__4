@@ -9,14 +9,14 @@ class ProductsRepository extends AbstractRepository {
 
   async create(products) {
     const [result] = await this.database.query(
-      `insert into ${this.table} (name, description, price, flavor, allergen, photo) values (?, ?, ?, ?, ?, ? )`,
+      `insert into ${this.table} (name, description, price, flavor, allergen, icon) values (?, ?, ?, ?, ?, ? )`,
       [
         products.name,
         products.description,
         products.price,
         products.flavor,
         products.allergen,
-        products.photo,
+        products.icon,
       ]
     );
 
