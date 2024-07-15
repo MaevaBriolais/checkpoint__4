@@ -1,0 +1,35 @@
+footer {
+  background-color: #c7d2a4;
+  border-top: solid 1px black;
+  padding: 1rem;
+
+  .footerContact {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    p {
+      font-size: 12px;
+
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      a:hover{
+        color: green;
+      }
+    }
+  }
+  img {
+    width: 20px;
+  }
+  .footerGithub {
+      justify-content: center;
+      margin-top: 1rem;
+  }
+}
