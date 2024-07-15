@@ -37,8 +37,8 @@ function Patisseries() {
             key={patisserie.id}
             className={`patisserieIndiv ${index % 2 === 0 ? "left" : "right"}`}
           >
-          <Link to={`/patisseries/${patisserie.id}`}>
             <img src={patisserie.icon} alt="Patisserie" />
+          <Link to={`/patisseries/${patisserie.id}`} className="link">
             <p>
               <span className="name">{patisserie.name}</span>
               <span className="price">{patisserie.price}€</span>
