@@ -1,7 +1,8 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
-import "../styles/Patisseries.css";
+import axios from "axios";
 import { Link } from "react-router-dom";
+
+import "../styles/Patisseries.css";
 
 function Patisseries() {
   const API_URL = import.meta.env.VITE_API_URL;
@@ -32,20 +33,18 @@ function Patisseries() {
         <p>LISTE DES PATISSERIES</p>
 
         {patisseries.map((patisserie, index) => (
-      
           <section
             key={patisserie.id}
             className={`patisserieIndiv ${index % 2 === 0 ? "left" : "right"}`}
           >
             <img src={patisserie.icon} alt="Patisserie" />
-          <Link to={`/patisseries/${patisserie.id}`} className="link">
+            <Link to={`/patisseries/${patisserie.id}`} className="link">
             <p>
               <span className="name">{patisserie.name}</span>
               <span className="price">{patisserie.price}€</span>
             </p>
-          </Link>
+            </Link>
           </section>
-        
         ))}
       </section>
     </section>
