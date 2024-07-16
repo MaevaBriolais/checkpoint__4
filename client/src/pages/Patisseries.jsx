@@ -1,6 +1,7 @@
+Patisseries.jsx
+
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 
 import "../styles/Patisseries.css";
 
@@ -38,12 +39,10 @@ function Patisseries() {
             className={`patisserieIndiv ${index % 2 === 0 ? "left" : "right"}`}
           >
             <img src={patisserie.icon} alt="Patisserie" />
-            <Link to={`/patisseries/${patisserie.id}`} className="link">
             <p>
               <span className="name">{patisserie.name}</span>
               <span className="price">{patisserie.price}€</span>
             </p>
-            </Link>
           </section>
         ))}
       </section>

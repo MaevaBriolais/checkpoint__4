@@ -1,5 +1,7 @@
 const AbstractSeeder = require("./AbstractSeeder");
 
+// const URL = `http://localhost:${process.env.APP_PORT}/assets/images`;
+
 class ProductsSeeder extends AbstractSeeder {
   constructor() {
     super({ table: "products", truncate: true });
