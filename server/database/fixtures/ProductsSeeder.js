@@ -1,10 +1,9 @@
 const AbstractSeeder = require("./AbstractSeeder");
 
-const URL = `http://localhost:${process.env.APP_PORT}`;
-
 class ProductsSeeder extends AbstractSeeder {
   constructor() {
     super({ table: "products", truncate: true });
+    this.URL = `http://localhost:${process.env.APP_PORT}/assets/images`;
   }
 
   async run() {
@@ -16,7 +15,7 @@ class ProductsSeeder extends AbstractSeeder {
         price: 15.0,
         flavor: "Agrumes",
         allergen: "Lactose, Oeufs et fruits à coque",
-        icon: `${URL}/public/assets/images/tarte_citron_noisette.png`,
+        icon: `${this.URL}/tarte_citron_noisette.png`,
       },
       {
         name: "Tarte snickers",
@@ -25,7 +24,7 @@ class ProductsSeeder extends AbstractSeeder {
         price: 25.0,
         flavor: "Gourmand",
         allergen: "Lactose, Oeufs, Cacahuètes, Gluten",
-        icon: "../../public/assets/images/tarte_snickers.png",
+        icon: `${this.URL}/tarte_snickers.png`,
       },
       {
         name: "Boule de chocolat",
@@ -35,7 +34,7 @@ class ProductsSeeder extends AbstractSeeder {
         flavor: "Chocolat",
         allergen:
           "Lait, soja, gluten, œufs, et peut contenir des traces de fruits à coque et d'arachides",
-        icon: "../../public/assets/images/BouleChocolat.png",
+        icon: `${this.URL}/BouleChocolat.png`,
       },
     ];
 
@@ -43,8 +42,6 @@ class ProductsSeeder extends AbstractSeeder {
       this.insert(product);
     });
 
-    // await Promise.all(this.promises);
-    // console.log('Products successfully seeded');
   }
 }
 
