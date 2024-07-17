@@ -1,4 +1,4 @@
-.navbar {
+.navbar1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,11 +8,10 @@
   border-bottom: solid 1px black;
   position: relative;
 
-  .menu-burger {
-    display: block;
-    cursor: pointer;
+  button {
+    background-color: #c7d2a4;
   }
-  .LinkNav{
+  .LinkNav {
     text-decoration: none;
     color: black;
   }
@@ -39,48 +38,31 @@
       width: 35px;
     }
   }
+}
+.menu {
+  display: flex;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  background-color: #333;
+  text-align: left;
+  transition: 0.25s;
 
-  .menu {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    flex-direction: column;
-    background-color: #333;
-    text-align: left;
-    transition: 0.25s;
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-    
-    li {
-      padding: 8px 16px;
-    }
-    
-    a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      font-size: 20px;
-    }
-    
-    a:hover {
-      background-color: #575757;
-    }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
   }
 
-  .menu.open {
-    display: block;
+  li {
+    padding: 8px 16px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
   }
 }
-
-
-
-
-
-

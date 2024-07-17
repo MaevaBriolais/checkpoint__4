@@ -35,7 +35,7 @@
 
 ## FAQ
 
-### 🔧 Outils utilisé :
+### 🔧 Outils utilisés :
 - _Concurrently_ : Permet de lancer plusieurs commandes simultanément dans la même interface de ligne de commande (CLI).
 - _Husky_ : Permet d'exécuter des commandes spécifiques déclenchées par des événements git.
 - _Vite_ : Alternative à Create-React-App, offrant moins d'outils pour une expérience plus fluide.

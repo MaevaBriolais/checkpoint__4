@@ -13,6 +13,7 @@ function NavBar() {
 
   return (
     <header className="navbar">
+      <section className="navbar1">
       <button
         className="menu-burger"
         onClick={toggleMenu}
@@ -29,13 +30,20 @@ function NavBar() {
       <div className="login">
         <img src={avatar} alt="avatar login" />
       </div>
-      <nav className={`menu ${isOpen ? "open" : ""}`}>
-        <ul>
+      </section>
+      <section className="menu">
+      <nav className="navMenu">
+      {isOpen ?
+        <ul >
           <li>
-            <Link to="/patisseries">Pâtisseries</Link>
+            <Link to="/patisseries">
+              Pâtisseries
+              </Link>
           </li>
         </ul>
+      : ""}
       </nav>
+      </section>
     </header>
   );
 }
