@@ -12,10 +12,10 @@ function PatisserieIndiv() {
   const API_URL = import.meta.env.VITE_API_URL;
 
   const [patisseries, setPatisseries] = useState(null);
-  const [isParagraphVisible, setParagraphVisible] = useState(false);
+  const [ParagraphVisible, setParagraphVisible] = useState(false);
 
   const toggleParagraphVisibility = () => {
-    setParagraphVisible(!isParagraphVisible);
+    setParagraphVisible(!ParagraphVisible);
   };
 
   useEffect(() => {
@@ -53,7 +53,7 @@ function PatisserieIndiv() {
           <h2>ALLERGENES</h2>
           <img src={next} alt="flèche suivante" />
           </div>
-        {isParagraphVisible && <p>{allergen}</p>}
+        {ParagraphVisible && <p>{allergen}</p>}
         </button>
       </section>
       <section className="box-3">
