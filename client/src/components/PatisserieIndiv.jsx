@@ -71,7 +71,7 @@ function PatisserieIndiv() {
       </section>
       <section className="box-4">
       <p>{price}€</p>
-      <button type="button">COMMANDER</button>
+      {/* <button type="button">COMMANDER</button> */}
       </section>
     </section>
   );
