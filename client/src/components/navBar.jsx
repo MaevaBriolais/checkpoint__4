@@ -1,6 +1,6 @@
-import "../styles/navBar.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import "../styles/navBar.css";
 
 import avatar from "../assets/images/avatar.png";
 
@@ -13,13 +13,18 @@ function NavBar() {
 
   return (
     <header className="navbar">
-      <span className="menu-burger" onClick={toggleMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </span>
+      <button
+        className="menu-burger"
+        onClick={toggleMenu}
+        aria-label="Toggle menu"
+        type="button"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
       <Link to="/" className="LinkNav">
-      <p> OSCAR </p>
+        <p> OSCAR </p>
       </Link>
       <div className="login">
         <img src={avatar} alt="avatar login" />
@@ -27,13 +32,7 @@ function NavBar() {
       <nav className={`menu ${isOpen ? "open" : ""}`}>
         <ul>
           <li>
-          <Link to="/patisseries">
-            Pâtisseries
-          </Link>
-          </li>
-          <li>
-            <Link to="/">
-            XXX</Link>
+            <Link to="/patisseries">Pâtisseries</Link>
           </li>
         </ul>
       </nav>

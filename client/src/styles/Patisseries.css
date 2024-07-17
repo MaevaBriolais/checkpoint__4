@@ -1,52 +1,84 @@
 .patisseries {
-  padding: 2rem;
-
   .patisserieFirst {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    margin-bottom: 5rem;
+    margin: 3rem 0 3rem 0;
     padding: 2rem;
-    background-color: #f0f1eb;
+    background-color: #c7d2a4;
+
+    .containerPatisserie {
+      max-width: 800px; 
+      margin: 0 auto; 
+      position: relative; 
+    }
+    
+    h2 {
+      position: absolute;
+      top: -3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
     p {
       padding-top: 2rem;
     }
   }
-  
+
   .patisserieSecond {
+    padding: 2rem;
+
+    .flavor-filter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      select{
+        font-size: 18px;
+        padding: 5px;
+      }
+    
+    }
+
     .patisserieIndiv {
       display: flex;
       justify-content: space-between;
       height: 150px;
       padding: 1rem;
-      margin: 1rem 0;
-      background-color: #f0f1eb;
+      margin: 2rem 0 3rem 0;
+      background-color: #ffffff;
+      border-radius: 3%;
+      border: solid #c7d2a4;
 
-      &.left{
+      &.left {
         flex-direction: row;
       }
-      &.right{
+      &.right {
         flex-direction: row-reverse;
       }
 
-      img{
-        width: 80px;
+      img {
+        width: 150px;
+        border-radius: 25%;
       }
 
-      .link{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          text-decoration: none;
-          color: black;
-          padding: 1rem;
+      .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        padding: 1rem 0 1rem 1rem;
       }
 
       p {
         text-align: center;
+
         .name {
           display: block;
+          margin-bottom: 1rem;
         }
         .price {
           display: block;
@@ -54,9 +86,4 @@
       }
     }
   }
-
- 
-  
-
-
 }
